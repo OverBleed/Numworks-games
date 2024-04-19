@@ -24,7 +24,7 @@ https://my.numworks.com/python/overbleed/square_cannon
 ## Pokeworse
 <img src="https://github.com/OverBleed/Numworks-games/blob/main/Pokeworse_screenshot.png" width="320">
 Definitely the most impressive. It can render a full screen in a few seconds (instantly on PC, when changing the OS settings to PC). <br />
-Although it has no gameplay, it still is a nice tech demo, it is very easy to create a map and change its position on the grid.
+Although it has no gameplay, it still is a nice tech demo, it is very easy to create a map and change its position on the grid. <br />
 The program also includes a bicolor sprite renderer (the Numworks can only draw rectangles), and like the map/grid, they just need a list of strings.
 It could fairly easily be improved to include more colors, but given the hardware limitations, it's not worth it. <br />
 You need all 3 files to run it, and it might not work on some Numworks (I don't know if it is because of hardware or OS). <br />
