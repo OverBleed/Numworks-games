@@ -7,19 +7,19 @@ Also I must say, the code is far from being polished and has very few comments. 
 
 ## Dodge the Squares
 <img src="https://github.com/OverBleed/Numworks-games/blob/main/Dodge_the_square_screenshot.png" width="320">
-This is the first one I made. The code is on a new level a bad, although I made a *slightly* better version with v2. <br />
+This is the first one I made. The code is on a new level a bad, although I made a *slightly* better version with v2. <br /> 
 [Link to the Nuwmorks page](https://my.numworks.com/python/overbleed/dodge_the_squares)
 
 ## Numworks Zombies
 <img src="https://github.com/OverBleed/Numworks-games/blob/main/Numworks_zombies_screenshot.png" width="320">
-Inspired by Call of Duty's zombies game mode, you just shoot zombies, they get stronger over time, you get points that can buy an upgrade (with 5k, walk over the blue rectangle), then they're only used to flex. <br />
+Inspired by Call of Duty's zombies game mode, you just shoot zombies, they get stronger over time, you get points that can buy an upgrade (with 5k, walk over the blue rectangle), then they're only used to flex. <br /> 
 [Link to the Nuwmorks page](https://my.numworks.com/python/overbleed/numworks_zombies)
 
 ## Square Cannon
 <img src="https://github.com/OverBleed/Numworks-games/blob/main/Square_cannon_screenshot.png" width="320">
 This one might be considered finished, you shoot a square with a square to shoot the other square. Very philosophical. <br />
-It uses real-life physics for the projectile trajectory, and for the wind, it uses whatever I tried that works and looks good. <br />
-[Link to the Nuwmorks page](my.numworks.com/python/overbleed/square_cannon)
+It uses real-life physics for the projectile trajectory, and for the wind, it uses whatever I tried that works and looks good. <br /> 
+[Link to the Nuwmorks page](https://my.numworks.com/python/overbleed/square_cannon)
 
 ## Pokeworse
 <img src="https://github.com/OverBleed/Numworks-games/blob/main/Pokeworse_screenshot.png" width="320">
