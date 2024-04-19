@@ -8,7 +8,7 @@ Also I must say, the code is far from being polished and has very few comments. 
 ## Dodge the Squares
 <img src="https://github.com/OverBleed/Numworks-games/blob/main/Dodge_the_square_screenshot.png" width="320">
 This is the first one I made. The code is on a new level a bad, although I made a *slightly* better version with v2. <br /> 
-[Link to the Nuwmorks page](https://my.numworks.com/python/overbleed/dodge_the_squares)
+[Link](https://my.numworks.com/python/overbleed/dodge_the_squares)
 
 ## Numworks Zombies
 <img src="https://github.com/OverBleed/Numworks-games/blob/main/Numworks_zombies_screenshot.png" width="320">
