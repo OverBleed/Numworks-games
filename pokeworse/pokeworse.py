@@ -189,37 +189,20 @@ def refreshEverything():
     loadMap(tileMap[playerCurrentMap])
     spriteRenderer(sprites[playerCurrentSprite], PLAYER_LENGTH, PLAYER_WIDTH, 2, [x, y])
 
+def refreshSingleTile(posx, posy, tilemap):
+    if tilemap[posx + (TILE_LENGTH*posy)] == "1":
+        spriteRenderer(sprites["grass"], TILE_LENGTH, TILE_WIDTH, 2, [x1 + (posx * 26) - 26, y1 + (posy * 30) - 30], (0, 0, 0), (255, 255, 255))
+
+    elif tilemap[posx + (TILE_LENGTH*posy)] == "2":
+        spriteRenderer(sprites["wall"], TILE_LENGTH, TILE_WIDTH, 2, [x1 + (posx * 26) - 26, y1 + (posy * 30) - 30], (0, 0, 0), (255, 255, 255))
+
+    else:
+        fill_rect(x1 + (posx * 26) - 26, y1 + (posy * 30) - 30, TILE_LENGTH*2, TILE_WIDTH*2, "white")
+
 def refreshPlayerMovement(tilemap): # only refreshes the tile the player was at instead of the whole screen
-
-    # tile the player was at 
-    if tilemap[playerPositionOnGrid[0] + (TILE_LENGTH*playerPositionOnGrid[1])] == "1":
-        spriteRenderer(sprites["grass"], TILE_LENGTH, TILE_WIDTH, 2, [x1 + (playerPositionOnGrid[0] * 26) - 26, y1 + (playerPositionOnGrid[1] * 30) - 30], (0, 0, 0), (255, 255, 255))
-
-    elif tilemap[playerPositionOnGrid[0] + (TILE_LENGTH*playerPositionOnGrid[1])] == "2":
-        spriteRenderer(sprites["wall"], TILE_LENGTH, TILE_WIDTH, 2, [x1 + (playerPositionOnGrid[0] * 26) - 26, y1 + (playerPositionOnGrid[1] * 30) - 30], (0, 0, 0), (255, 255, 255))
-
-    else:
-        fill_rect(x1 + (playerPositionOnGrid[0] * 26) - 26, y1 + (playerPositionOnGrid[1] * 30) - 30, PLAYER_LENGTH*2, PLAYER_WIDTH*2, "white")
-
-    # tile on the right
-    if tilemap[playerPositionOnGrid[0] + 1 + (TILE_LENGTH*playerPositionOnGrid[1])] == "1":
-        spriteRenderer(sprites["grass"], TILE_LENGTH, TILE_WIDTH, 2, [x1 + ((playerPositionOnGrid[0] + 1) * 26) - 26, y1 + (playerPositionOnGrid[1] * 30) - 30], (0, 0, 0), (255, 255, 255))
-
-    elif tilemap[playerPositionOnGrid[0] + 1 + (TILE_LENGTH*playerPositionOnGrid[1])] == "2":
-        spriteRenderer(sprites["wall"], TILE_LENGTH, TILE_WIDTH, 2, [x1 + ((playerPositionOnGrid[0] + 1) * 26) - 26, y1 + (playerPositionOnGrid[1] * 30) - 30], (0, 0, 0), (255, 255, 255))
-
-    else:
-        fill_rect(x1 + ((playerPositionOnGrid[0] + 1) * 26) - 26, y1 + (playerPositionOnGrid[1] * 30) - 30, TILE_LENGTH*2, TILE_WIDTH*2, "white")
-
-    # tile down
-    if tilemap[playerPositionOnGrid[0] + (TILE_LENGTH*(playerPositionOnGrid[1] + 1))] == "1":
-        spriteRenderer(sprites["grass"], TILE_LENGTH, TILE_WIDTH, 2, [x1 + (playerPositionOnGrid[0] * 26) - 26, y1 + ((playerPositionOnGrid[1] + 1) * 30) - 30], (0, 0, 0), (255, 255, 255))
-
-    elif tilemap[playerPositionOnGrid[0] + (TILE_LENGTH*(playerPositionOnGrid[1] + 1))] == "2":
-        spriteRenderer(sprites["wall"], TILE_LENGTH, TILE_WIDTH, 2, [x1 + (playerPositionOnGrid[0] * 26) - 26, y1 + ((playerPositionOnGrid[1] + 1) * 30) - 30], (0, 0, 0), (255, 255, 255))
-
-    else:
-        fill_rect(x1 + (playerPositionOnGrid[0] * 26) - 26, y1 + ((playerPositionOnGrid[1] + 1) * 30) - 30, TILE_LENGTH*2, TILE_WIDTH*2, "white")
+    refreshSingleTile(playerPositionOnGrid[0], playerPositionOnGrid[1], tilemap)
+    refreshSingleTile(playerPositionOnGrid[0] + 1, playerPositionOnGrid[1], tilemap)
+    refreshSingleTile(playerPositionOnGrid[0], playerPositionOnGrid[1] + 1, tilemap)
 
 refreshEverything()
 
